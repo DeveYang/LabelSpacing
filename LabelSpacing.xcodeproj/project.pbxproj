@@ -15,6 +15,7 @@
 		183D05311C5619200086A193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183D052F1C5619200086A193 /* LaunchScreen.storyboard */; };
 		183D053C1C5619210086A193 /* LabelSpacingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D053B1C5619210086A193 /* LabelSpacingTests.m */; };
 		183D05471C5619210086A193 /* LabelSpacingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D05461C5619210086A193 /* LabelSpacingUITests.m */; };
+		183D055D1C561A0B0086A193 /* SpaceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D055C1C561A0B0086A193 /* SpaceLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		183D05421C5619210086A193 /* LabelSpacingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabelSpacingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183D05461C5619210086A193 /* LabelSpacingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSpacingUITests.m; sourceTree = "<group>"; };
 		183D05481C5619210086A193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183D055B1C561A0B0086A193 /* SpaceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceLabel.h; sourceTree = "<group>"; };
+		183D055C1C561A0B0086A193 /* SpaceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		183D05201C5619200086A193 /* LabelSpacing */ = {
 			isa = PBXGroup;
 			children = (
+				183D05571C56197F0086A193 /* LabelSpace */,
 				183D05241C5619200086A193 /* AppDelegate.h */,
 				183D05251C5619200086A193 /* AppDelegate.m */,
 				183D05271C5619200086A193 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				183D05481C5619210086A193 /* Info.plist */,
 			);
 			path = LabelSpacingUITests;
+			sourceTree = "<group>";
+		};
+		183D05571C56197F0086A193 /* LabelSpace */ = {
+			isa = PBXGroup;
+			children = (
+				183D055B1C561A0B0086A193 /* SpaceLabel.h */,
+				183D055C1C561A0B0086A193 /* SpaceLabel.m */,
+			);
+			path = LabelSpace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				183D05291C5619200086A193 /* ViewController.m in Sources */,
 				183D05261C5619200086A193 /* AppDelegate.m in Sources */,
 				183D05231C5619200086A193 /* main.m in Sources */,
+				183D055D1C561A0B0086A193 /* SpaceLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LabelSpacing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DeveYang.LabelSpacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LabelSpacing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DeveYang.LabelSpacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
